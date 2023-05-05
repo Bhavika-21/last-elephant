@@ -14,6 +14,7 @@ const messege = document.getElementById("messege");
 const postOfficeList = document.getElementById('post-office-list');
 const searchInput = document.getElementById('search-input');
 const loader = document.getElementById("loader");
+const searchbox = document.getElementById("search-box")
 
 // Get the IP address on page load
 window.addEventListener('load', function () {
@@ -169,7 +170,7 @@ function onFetchBtnClick() {
     setTimeout(function () {
         loader.style.display = "none";
         fetchBtn.style.display = "none";
-        searchInput.style.display = "block";
+        searchbox.style.display = "block";
         const script = document.createElement("script");
         script.type = "text/javascript";
         script.src = "https://api.ipify.org?format=jsonp&callback=getIP";

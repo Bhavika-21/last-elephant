@@ -52,28 +52,33 @@ table {
   height: 8rem;
   padding: 1rem;
   font-size: 20px;
-  margin-right: 40px;
   margin-bottom: 30px;
+
+ 
 }
 
 #post-office-list {
   font-size: 30px;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
-
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
 }
 
 #search-box input {
   border: 1px solid black;
   border-radius: 0.5rem;
   height: 2rem;
-  width: 95%;
-  /* margin: 2.5rem; */
+  width: 96%;
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
 }
-
+#search-box {
+  display: none;
+}
 #search-input::placeholder {
   width: max-content;
   margin: 20px;
@@ -84,7 +89,6 @@ table {
 }
 
 #search-input {
-  display: none;
   padding: 10px 40px 10px 20px;
   
   border-radius: 5px;
